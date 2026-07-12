@@ -3,9 +3,9 @@
 **metroguns** is an addon for [MrCrayfish's Gun Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfishs-gun-mod),
 forked from [Additional Guns](https://github.com/HaloOfBlocks/AdditionalGuns) by the Halo of Blocks team.
 
-This fork adds configuration and additional weapons on top of my personal
+This fork adds configuration on top of my personal
 fork of MrCrayfish's Gun Mod, tailoring the original Additional Guns
-content to work with the changes made there.
+content to work with the changes made there. Find all changes in the [CHANGELOG](changes.md).
 
 ### 📦 Required dependencies
 * [MrCrayfish's Gun Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfishs-gun-mod)

@@ -14,9 +14,6 @@ More content will be added over time, as well as small new features.
 * [Framework](https://www.curseforge.com/minecraft/mc-mods/framework) **(1.18.x and above)**
 * [Obfuscate](https://www.curseforge.com/minecraft/mc-mods/obfuscate) **(1.16.x only)**
 
-### ➕ Do you want even more?
-Try out our other mod [Project Arsenal](https://www.curseforge.com/minecraft/mc-mods/project-arsenal) if you are interested in even more guns with unique additional features!
-
 ### 🔨 Contributing
 Check out the [Additional Guns Wiki](https://github.com/Pinelog-Studios/AdditionalGuns/wiki/How-To-Contribute:-Introduction) if you would like to submit a weapon or other asset to add to the mod.
 

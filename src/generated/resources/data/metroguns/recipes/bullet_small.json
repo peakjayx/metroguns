@@ -1,0 +1,21 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "item": "metroguns:casing_small",
+      "count": 32
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 2
+    },
+    {
+      "tag": "forge:nuggets/gold",
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "metroguns:bullet_small",
+    "count": 32
+  }
+}

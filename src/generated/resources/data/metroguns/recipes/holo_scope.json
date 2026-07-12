@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:nuggets/iron",
+      "count": 7
+    },
+    {
+      "item": "minecraft:glass_pane",
+      "count": 1
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 4
+    }
+  ],
+  "result": {
+    "item": "metroguns:holo_scope"
+  }
+}

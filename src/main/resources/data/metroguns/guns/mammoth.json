@@ -1,0 +1,72 @@
+{
+  "general": {
+    "rate": 27,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 10,
+    "reloadAmount": 1,
+    "recoilAngle": 10.0,
+    "recoilKick": 0.5,
+    "recoilAdsReduction": 0.5,
+    "alwaysSpread": true,
+    "spread": 0.25
+  },
+  "projectile": {
+    "item": "metroguns:bullet_long",
+    "visible": false,
+    "gravity": true,
+    "damage": 37.0,
+    "size": 1.5,
+    "speed": 100.0,
+    "life": 100
+  },
+  "sounds": {
+    "fire": "metroguns:item.mammoth.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.rifle.cock",
+    "silencedFire": "metroguns:item.heavy.suppressed"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.7,
+      "zOffset": -7.25
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.7,
+      "yOffset": 4.75,
+      "zOffset": 2.0
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.0,
+        "zOffset": 3.0,
+        "scale": 0.75
+      },
+      "barrel": {
+        "yOffset": 3.7,
+        "zOffset": -7.25,
+        "scale": 0.4
+      },
+      "underBarrel": {
+        "yOffset": 3.195,
+        "zOffset": 0.0,
+        "scale": 0.75
+      },
+      "stock": {
+        "yOffset": 3.3,
+        "zOffset": 8.525
+      },
+      "sideLeft": {
+        "xOffset": -0.8,
+        "yOffset": 3.6,
+        "zOffset": 4.0
+      },
+      "sideRight": {
+        "xOffset": 0.8,
+        "yOffset": 3.6,
+        "zOffset": 4.0
+      }
+    }
+  }
+}

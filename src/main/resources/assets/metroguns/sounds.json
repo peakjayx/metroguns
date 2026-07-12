@@ -1,0 +1,298 @@
+{
+  "item.mammoth.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/mammoth_fire"
+      }
+    ]
+  },
+  "item.deagle.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/deagle_fire"
+      }
+    ]
+  },
+  "item.ak1.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ak1_fire"
+      }
+    ]
+  },
+  "item.ak2.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ak2_fire"
+      }
+    ]
+  },
+  "item.aos.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/aos_fire"
+      }
+    ]
+  },
+  "item.awm.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/awm_fire"
+      }
+    ]
+  },
+  "item.ar15.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ar15_fire"
+      }
+    ]
+  },
+  "item.intsup.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/intsup"
+      }
+    ]
+  },
+  "item.mp7a2.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/mp7a2_fire"
+      }
+    ]
+  },
+  "item.ots03.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ots03_fire"
+      }
+    ]
+  },
+  "item.p250.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/p250_fire"
+      }
+    ]
+  },
+  "item.pistol.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/pistol_fire"
+      }
+    ]
+  },
+  "item.pistol.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/pistol_suppressed"
+      }
+    ]
+  },
+  "item.vector.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/vector_fire"
+      }
+    ]
+  },
+  "item.vector.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/vector_suppressed"
+      }
+    ]
+  },
+  "item.heavy.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/heavy_fire"
+      }
+    ]
+  },
+  "item.ssg08.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ssg08_fire"
+      }
+    ]
+  },
+  "item.aug.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/aug_fire"
+      }
+    ]
+  },
+  "item.banshee.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/banshee_fire"
+      }
+    ]
+  },
+  "item.fn2000.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/fn2000_fire"
+      }
+    ]
+  },
+  "item.m1014.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/m1014_fire"
+      }
+    ]
+  },
+  "item.m1911.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/m1911_fire"
+      }
+    ]
+  },
+  "item.m1911.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/m1911_suppressed"
+      }
+    ]
+  },
+  "item.m1911.enchanted": {
+    "subtitle": "subtitle.metroguns.enchanted_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/m1911_enchanted"
+      }
+    ]
+  },
+  "item.mac10.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/mac10_fire"
+      }
+    ]
+  },
+  "item.magnum.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/magnum_fire"
+      }
+    ]
+  },
+  "item.pp19.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/pp19_fire"
+      }
+    ]
+  },
+  "item.ravensclaw.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ravensclaw_fire"
+      }
+    ]
+  },
+  "item.rifle.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/rifle_suppressed"
+      }
+    ]
+  },
+  "item.light.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/light_suppression"
+      }
+    ]
+  },
+  "item.medium.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/medium_suppression"
+      }
+    ]
+  },
+  "item.heavy.suppressed": {
+    "subtitle": "subtitle.metroguns.suppressed_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/heavy_suppression"
+      }
+    ]
+  },
+  "item.unica.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/unica_fire"
+      }
+    ]
+  },
+  "item.python.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/python_fire"
+      }
+    ]
+  },
+  "item.scar.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/scar_fire"
+      }
+    ]
+  },
+  "item.ou.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/ou_fire"
+      }
+    ]
+  },
+  "item.usas12.fire": {
+    "subtitle": "subtitle.metroguns.regular_fire",
+    "sounds": [
+      {
+        "name": "metroguns:item/usas12_fire"
+      }
+    ]
+  }
+}

@@ -1,0 +1,256 @@
+
+buildscript {
+
+    repositories {
+
+        maven { url = 'https://files.minecraftforge.net/maven' }
+
+        mavenCentral()
+
+    }
+
+    dependencies {
+
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+
+    }
+
+}
+
+
+
+apply plugin: 'net.minecraftforge.gradle'
+
+apply plugin: 'maven-publish'
+
+
+
+version = "0.8.0-1.16.5"
+
+group = "haloofblocks.additionalguns"
+
+archivesBaseName = "additional-guns"
+
+
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+
+
+
+minecraft {
+
+    mappings channel: 'official', version: '1.16.5'
+
+
+
+    runs {
+
+        client {
+
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'javax.net.ssl.trustStore', 'C:/Users/juliu/AppData/Local/JavaCerts/cacerts-with-norton.jks'
+
+            property 'javax.net.ssl.trustStorePassword', 'changeit'
+
+            // Dev QoL: auto-loads this save on startup, skips main menu/world list.
+            // See DevAutoWorld.java. Remove/rename to change or disable.
+            property 'metroguns.autoLoadWorld', 'New World'
+
+            // gun-mod's mixins (cgm.mixins.json) are consumed here as raw compiled
+            // classes (project(':gun-mod')), not a deobfuscated jar - a deobfuscated
+            // jar gets its refmap remapped as part of that process, a plain project
+            // dependency doesn't. Without this, Mixin looks up SRG names (e.g.
+            // func_70097_a) directly against the dev environment's official-named
+            // classes and fails. Mirrors gun-mod's own runs.client block.
+            property 'mixin.env.disableRefMap', 'true'
+
+            property 'mixin.env.refMapRemappingFile', "${project.buildDir}/createSrgToMcp/output.srg"
+
+
+
+            mods {
+
+                metroguns {
+
+                    source sourceSets.main
+
+                }
+
+            }
+
+        }
+
+
+
+        server {
+
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+
+
+            mods {
+
+                metroguns {
+
+                    source sourceSets.main
+
+                }
+
+            }
+
+        }
+
+
+
+        data {
+
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'metroguns', '--all', '--output', file('src/generated/resources/')
+
+
+
+            mods {
+
+                metroguns {
+
+                    source sourceSets.main
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+
+
+repositories {
+
+    maven {
+
+        url = uri("${project.projectDir}/local-repo")
+
+    }
+
+    maven {
+
+        url = "https://www.cursemaven.com"
+
+        content { includeGroup 'curse.maven' }
+
+    }
+
+}
+
+
+
+dependencies {
+
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.39'
+
+
+
+    // settings.gradle links gun-mod in as a subproject (source, hotswappable)
+    // when MrCrayfishGunMod-1.16.X is checked out next to us; otherwise fall
+    // back to the prebuilt+deobfuscated jar in local-repo.
+    if (findProject(':gun-mod') != null) {
+
+        implementation project(':gun-mod')
+
+    } else {
+
+        // Lokale JARs über lokales Maven-Repo (damit fg.deobf Refmaps korrekt remappt)
+        implementation fg.deobf('com.mrcrayfish:gun-mod:1.2.6-1.16.5')
+
+    }
+
+    implementation fg.deobf('com.mrcrayfish:obfuscate:0.6.3-1.16.5')
+
+
+
+    runtimeOnly fg.deobf('curse.maven:configured-457570:3780620')
+
+    runtimeOnly fg.deobf('curse.maven:catalogue-459701:3780550')
+
+    runtimeOnly fg.deobf('curse.maven:jei-238222:3681294')
+
+}
+
+
+
+jar {
+
+    manifest {
+
+        attributes([
+
+                "Specification-Title": "Additional Guns",
+
+                "Specification-Vendor": "Halo of Blocks",
+
+                "Specification-Version": "1",
+
+                "Implementation-Title": project.name,
+
+                "Implementation-Version": project.jar.archiveVersion,
+
+                "Implementation-Vendor" : "Halo of Blocks",
+
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+
+        ])
+
+    }
+
+}
+
+
+
+jar.finalizedBy('reobfJar')
+
+
+
+publishing {
+
+    publications {
+
+        mavenJava(MavenPublication) {
+
+            artifact jar
+
+        }
+
+    }
+
+    repositories {
+
+        maven {
+
+            url "file:///${project.projectDir}/mcmodsrepo"
+
+        }
+
+    }
+
+}

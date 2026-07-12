@@ -1,0 +1,67 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 32,
+    "reloadAmount": 8,
+    "recoilAngle": 2.75,
+    "recoilKick": 0.75,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": true,
+    "spread": 4.0
+  },
+  "projectile": {
+    "item": "metroguns:bullet_small",
+    "visible": false,
+    "damage": 7.0,
+    "size": 0.1,
+    "speed": 25.0,
+    "life": 45
+  },
+  "sounds": {
+    "fire": "metroguns:item.mp7a2.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.rifle.cock",
+    "silencedFire": "metroguns:item.pistol.suppressed"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 7.5,
+      "zOffset": -7
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 11.4,
+      "zOffset": 1.5
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 10.25,
+        "zOffset": 10.0,
+        "scale": 1.15
+      },
+      "barrel": {
+        "yOffset": 7.6,
+        "zOffset": -3.0,
+        "scale": 0.5
+      },
+      "underBarrel": {
+        "yOffset": 3.0,
+        "zOffset": -0.5
+      },
+      "sideLeft": {
+        "xOffset": -1.5,
+        "yOffset": 7.3,
+        "zOffset": 3
+      },
+      "sideRight": {
+        "xOffset": 1.5,
+        "yOffset": 7.3,
+        "zOffset": 3
+      }
+    }
+  }
+}

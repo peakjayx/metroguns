@@ -1,0 +1,13 @@
+rootProject.name = 'AdditionalGuns-1.16.x'
+
+// Multi-project link (not a composite build): ForgeGradle 5 applied twice
+// across an includeBuild() causes a StackOverflowError in its artifactural
+// repository wrapper. Including gun-mod as a subproject keeps everything in
+// one build/classloader session, so source changes there still hotswap.
+// Falls back to the prebuilt+deobfuscated jar in local-repo (see build.gradle)
+// if the sibling checkout isn't present.
+def gunModDir = file('../../MrCrayfishGunMod-1.16.X')
+if (gunModDir.exists()) {
+    include ':gun-mod'
+    project(':gun-mod').projectDir = gunModDir
+}
